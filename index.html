@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SIGMA-UBH</title>
+<style>
+body{font-family:system-ui,sans-serif;display:grid;place-items:center;height:100vh;margin:0;color:#16212B;text-align:center;padding:0 16px}
+a{color:#0B5FA5}
+</style>
+</head>
+<body>
+<p id="m">Mengalihkan ke SIGMA-UBH... <a id="l" href="#">Klik di sini jika tidak berpindah</a></p>
+<script>
+// Ganti satu baris ini dengan alamat web app Apps Script (diakhiri /exec)
+var APP = "https://script.google.com/macros/library/d/1oYo1tRLELR2pmzQ80cBZDMwCeSabMuzi-WQ4ORKZo2COr0o4dYL_GIvp/17";
+
+if (APP.indexOf("https://script.google.com/") === 0) {
+  document.getElementById("l").href = APP;
+  location.replace(APP);
+} else {
+  document.getElementById("m").textContent = "Alamat aplikasi belum diisi. Edit file index.html pada baris APP.";
+}
+</script>
+</body>
+</html>
